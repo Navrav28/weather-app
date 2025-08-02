@@ -37,87 +37,115 @@ body {
 
 }
 
+
 .weather_container .formDivClass button {
     border: none;
     /* outline: none; */
     border-radius: 45px;
     padding: 10px;
     margin-left: 4px;
+   transition: all 0.3s ease-in-out;
+    background-color: #ece9ee;
     /* width: 50px; */
 
 }
-.weather_container .formDivClass button i {
-    font-size: 15px;
-    color: #807e7e;
+
+.weather_container .formDivClass button:hover {
+    background-color: #fff;
+    color: #0c0114;
+    cursor: pointer;
+    transform: scale(1.1);
 
 }
-.weather_container .weather_info{
+
+.weather_container .formDivClass button i {
+    font-size: 15px;
+    color: rgb(87, 85, 85);
+
+}
+
+.weather_container .weather_info {
     /* background-color: aliceblue; */
     margin-top: 30px;
 }
+
 .weather_container .weather_info .cloudAndCelsiusDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.weather_container .weather_info .cloudAndCelsiusDiv img{
+
+.weather_container .weather_info .cloudAndCelsiusDiv img {
     width: 150px;
     height: 150px;
 }
+
 .weather_container .weather_info .cloudAndCelsiusDiv h2 {
     font-size: 30px;
     color: #fff;
     font-weight: 700;
     margin-block: 10px;
 }
+
 .weather_container .weather_info .cloudAndCelsiusDiv p {
     font-size: 18px;
     color: #fff;
     font-weight: 500;
     /* margin-block: 4px; */
 }
+
 .weather_container .weather_info .humidityAndwindspeedContainer {
     display: flex;
     background-color: #fff;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
+    padding-inline: 10px;
+    margin-top: 10px;
+
     /* margin-block: 4px; */
 }
-.weather_container .weather_info .humidityAndwindspeedContainer .humidity{
+
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity {
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* margin-block: 4px; */
 }
-.weather_container .weather_info .humidityAndwindspeedContainer .humidity img{
+
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity img {
     width: 30px;
     height: 30px;
     color: #fff;
     /* margin-block: 4px; */
 }
-.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage{
+
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage {
     display: flex;
     flex-direction: column;
     margin-left: 3px;
     /* justify-content: center;
     align-items: center; */
 }
-.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage h2{
+
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage h2 {
     font-size: 16px;
     color: #0c0114;
     font-weight: 700;
     /* margin-block: 4px; */
 }
-.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage p{
+
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage p {
     font-size: 14px;
     color: #0c0114;
     /* font-weight: 700; */
     /* margin-block: 4px; */
 }
-.weather_container .weather_info .humidityAndwindspeedContainer .wind_speed img{
+
+
+/* .weather_container .weather_info .humidityAndwindspeedContainer .wind_speed img{
     width: 30px;
     height: 30px;
     color: #fff;
     /* margin-block: 4px; */
-}
