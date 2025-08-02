@@ -51,3 +51,73 @@ body {
     color: #807e7e;
 
 }
+.weather_container .weather_info{
+    /* background-color: aliceblue; */
+    margin-top: 30px;
+}
+.weather_container .weather_info .cloudAndCelsiusDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.weather_container .weather_info .cloudAndCelsiusDiv img{
+    width: 150px;
+    height: 150px;
+}
+.weather_container .weather_info .cloudAndCelsiusDiv h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-block: 10px;
+}
+.weather_container .weather_info .cloudAndCelsiusDiv p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    /* margin-block: 4px; */
+}
+.weather_container .weather_info .humidityAndwindspeedContainer {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-block: 4px; */
+}
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-block: 4px; */
+}
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity img{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    /* margin-block: 4px; */
+}
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+    /* justify-content: center;
+    align-items: center; */
+}
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage h2{
+    font-size: 16px;
+    color: #0c0114;
+    font-weight: 700;
+    /* margin-block: 4px; */
+}
+.weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage p{
+    font-size: 14px;
+    color: #0c0114;
+    /* font-weight: 700; */
+    /* margin-block: 4px; */
+}
+.weather_container .weather_info .humidityAndwindspeedContainer .wind_speed img{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    /* margin-block: 4px; */
+}
