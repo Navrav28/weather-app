@@ -44,7 +44,7 @@ body {
     border-radius: 45px;
     padding: 10px;
     margin-left: 4px;
-   transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background-color: #ece9ee;
     /* width: 50px; */
 
@@ -66,7 +66,9 @@ body {
 
 .weather_container .weather_info {
     /* background-color: aliceblue; */
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 30px; */
 }
 
 .weather_container .weather_info .cloudAndCelsiusDiv {
@@ -111,6 +113,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* overflow: hidden; */
     /* margin-block: 4px; */
 }
 
@@ -143,9 +146,83 @@ body {
     /* margin-block: 4px; */
 }
 
+.weather_container .location_notFound {
+    margin-top: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.weather_container .location_notFound h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-block: 20px;
+}
+
+.weather_container .location_notFound img {
+    width: 150px;
+    height: 150px;
+
+}
 
 /* .weather_container .weather_info .humidityAndwindspeedContainer .wind_speed img{
     width: 30px;
     height: 30px;
     color: #fff;
     /* margin-block: 4px; */
+
+
+
+
+@media screen and (max-width: 400px) {
+    .weather_container {
+        width: 70%;  
+        margin:auto;
+    }
+
+    .weather_container .formDivClass {
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .weather_container .formDivClass input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .weather_container .formDivClass button {
+        width: 50%;
+
+        margin-left: 50px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+      .weather_container .weather_info .cloudAndCelsiusDiv img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .weather_container .weather_info .humidityAndwindspeedContainer .humidity img {
+        width: 23px;
+        height: 23px;
+        color: #fff;
+        /* margin-block: 4px; */
+    }
+
+    .weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage h2 {
+        font-size: 14px;
+        font-weight: 500;
+        /* margin-block: 4px; */
+    }
+
+    .weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage p {
+        font-size: 12px;
+        /* font-weight: 700; */
+        /* margin-block: 4px; */
+    }
+
+  
+}
