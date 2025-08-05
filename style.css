@@ -105,6 +105,8 @@ body {
     border-radius: 10px;
     padding-inline: 10px;
     margin-top: 10px;
+    overflow-x: hidden;
+
 
     /* margin-block: 4px; */
 }
@@ -194,7 +196,7 @@ body {
     }
 
     .weather_container .formDivClass button {
-        width: 50%;
+        width: 40%;
 
         margin-left: 50px;
         border-radius: 10px;
@@ -204,25 +206,53 @@ body {
         width: 120px;
         height: 120px;
     }
-
+    .weather_container .weather_info .cloudAndCelsiusDiv h2 {
+        font-size: 20px;
+    }
+    .weather_container .weather_info .cloudAndCelsiusDiv p {
+        font-size: 16px;
+    }
+     .weather_container .weather_info .humidityAndwindspeedContainer .humidity{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       }
+     .weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage{
+            margin-top: 3px;
+           }
     .weather_container .weather_info .humidityAndwindspeedContainer .humidity img {
         width: 23px;
         height: 23px;
-        color: #fff;
+    
         /* margin-block: 4px; */
     }
 
     .weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage h2 {
         font-size: 14px;
         font-weight: 500;
-        /* margin-block: 4px; */
+        margin-block: 4px;
     }
 
     .weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage p {
-        font-size: 12px;
+        font-size: 11px;
         /* font-weight: 700; */
         /* margin-block: 4px; */
     }
 
   
+}
+
+@media screen and (max-width: 333px){
+     
+       .weather_container .weather_info .humidityAndwindspeedContainer .humidity{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+       }
+           .weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage{
+            margin-top: 5px;
+           }
+            .weather_container .weather_info .humidityAndwindspeedContainer .humidity .humidityAndPercentage h2 {
+                margin-block: 4px;
+            }
 }
